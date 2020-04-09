@@ -1,0 +1,127 @@
+
+
+/* box-sizing: border-box; */
+/* 1em =  16px */
+:root
+{
+    --colorPrincipal: #aacfcf;
+    --colorSecundario: #fde2e2;
+    --colorTerciario: #679b9b;
+    --colorsimpleColor: #ffb6b6;
+    --grayColor: #98e6ad;
+}
+
+/* nav {background-color: var(--colorPrincipal); list-style: none; } */
+html {width: 100%;}
+body { background-color: lightgray; margin: 0; padding: 0;}
+
+.menu {display: flex; justify-content: space-around; padding: 0; width: 70%;}
+
+a {text-decoration:none; }
+
+
+.navPrincipal {box-shadow: 5px 5px gray; position: sticky; top: 0; /* z-index: 1; */opacity: 1; background-color:aquamarine;border: 1px solid; border-radius: 5px; /* width: 100%; */ display: flex; align-items: center; justify-content: space-between; margin: 0 0 20px 0; height: 10vh;}
+.container-search input{ display: flex; align-items: center; margin: 0 60px 0 15px; border: 1px solid grey; border-radius: 50px; height: 30px; padding: 0 0 0 10px; background-color: white; font-family: "fontawesome"; width: 250px;}
+
+
+hr {height: 2px; background-color: grey;}
+
+/* ****************************************************** */
+
+.home {display: flex; padding: 0 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 60vh; background: url('https://loremflickr.com/1920/700/recycle'); position: center center; background-repeat: no-repeat; background-size: cover;}
+.title-home {color: white; font-size: 48px; text-align: center;}
+p {color: white; font-size: 24px; text-align: center;}
+
+/* ****************************************************** */
+
+.section1 {display: flex; padding: 0 30px; justify-content: space-evenly;}
+/* .select-checkbox {} */
+input[type="checkbox"] {margin: 0 20px 20px 0;}
+
+/* outline: none; para los input 
+max-width: fit-content
+padding: 0.4em 5em;
+cursor: pointer;
+order: 1;
+flex-wrap:wrap;
+@media screen and (max-width) {}
+*/
+
+.img-checkbox {width: 50%; display: flex; justify-content: center; align-items: center;}
+.img-checkbox img {width: 250px; height: 250px;}
+
+.section2 {display: flex; padding: 0 30px; justify-content: space-around; /* height: 30vh; */ align-items: center;}
+.location {background-color: lightgreen; border-top: 2px solid black; width: 60%; height: 50px; text-align: center;}
+.container-select {height: 40px; width: 300px; margin: 0 auto 20px; display: block;}
+
+.address input {height: 40px; width: 300px; margin: 0 auto 20px; display: block;}
+
+
+.section3 { text-align: center; height: 30vh;}
+.title-date-time {background-color: lightgreen; border-top: 2px solid black; width: 60%; height: 50px; text-align: center;margin: 0 auto 50px;}
+.date-time {display: flex; justify-content: space-evenly; margin: 0 auto 50px;}
+
+.section4 {text-align: center;  height: 30vh;}
+.title-contact {background-color: lightgreen; border-top: 2px solid black; width: 60%; height: 50px; text-align: center;margin: 0 auto 50px;}
+.data-contact {display: flex; justify-content: space-around; margin: 0 auto 50px;}
+
+
+.hamburger-icon {display: none;}
+
+.section5 {text-align: center; height: 30vh; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+
+h3 {margin: 0;}
+
+.mainModal{
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    padding: 25% 0 0 30%;
+}
+#modal:target{ opacity:1; pointer-events:auto; }
+
+.content-modal {width: 500px; height: 200px; border: solid 2px black; border-radius: 5px; padding: 1em; position: relative; background-color: white;}
+.header-modal {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+
+.confirmation-cancel-option {color: black; text-align: left; font-size: 20px;}
+.btn-container {display: flex; justify-content: space-around; width: 50%; margin: 0 1em 0 auto;}
+
+.up {position: fixed; right: 30px; bottom: 30px;}
+
+
+
+
+@media screen and (max-width: 600px)
+{
+    .navPrincipal {display: flex; justify-content: space-between;}
+    .menu a:not(:last-child) {display: none;}
+    .menu a.hamburger-icon {display: flex; color: red; position: relative; z-index: 5;}
+    .home { height: 50vh; padding: 0 30px;}
+    .title-home {font-size: 16px;}
+    p {font-size: 12px;}
+    .section1 {padding: 20px;}
+    .img-checkbox {display: none;}
+    .section2 {display: block;}
+    .location {width: 80%; margin: 0 10% 20px;}
+    .map {width: 100%; height: 40vh; margin: 0  auto 20px;}
+    .date-time {display: block;}
+    .date-time input {margin: 0 0 10px 0;}
+    .section4 {height: 40vh;}
+    .data-contact {display: block;}
+    .data-contact-label {display: block; margin: 0 auto 10px;}
+    .container-select {width: 60%;}
+    .address input {width: 60%;}
+    .container-search input{margin: 0 60px 0 15px; width: 150px;}
+}
+
+/* ctrl + }
+ctrl + /
+`
+alrt gr + } ``*/

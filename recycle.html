@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reciclaje</title>
+    <link rel="stylesheet" href="recycle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navPrincipal" id="navMenu">
+        <div class="menu">
+            <a class="menu-item" href="#home">Inicio</a>
+            <a class="menu-item" href="#select-element">Reciclaje</a>
+            <a class="menu-item" href="#location">Ubicación</a>
+            <a class="menu-item" href="#dateTime">Fecha y hora</a>
+            <a class="menu-item" href="#contact">Datos de cobtacto</a>
+            <a class="menu-item" href="#confirmation">Confirmación</a>
+            <a class="hamburger-icon" href="#"><span class="fa fa-bars"></span></a>
+        </div>
+        <div class="container-search">
+            <input type="search" placeholder="&#xf002;">
+        </div>
+    </nav>
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="home" id="home">
+        <h1 class="title-home">Sistema de Recolección de Residuos a domicilio</h1>
+        <p>Nuestro Sistema de Recolección de Residuos a domicilio, le permite liberar su ambiente de residuos tóxicos y elementos que ya no necesita.</p>
+        <p>Estamos en la capacidad de dar el apropiado tratamiento a toda clase de elementos, ya sean reciclables o no.</p>
+    </section>
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="section1" id="select-element">
+        <div class="select-checkbox">
+            <h2>Selecciona el elemento a entregar</h2>
+            <label><input type="checkbox">Papel</label><br>
+            <label><input type="checkbox">Cartón</label><br>
+            <label><input type="checkbox">Vidrio</label><br>
+            <label><input type="checkbox">Residuos Tóxicos</label><br>
+            <label><input type="checkbox">Aluminio</label><br>
+            <label><input type="checkbox">Baterías</label><br>
+            <label><input type="checkbox">Dispositivos electrónicos</label><br>
+            <label><input type="checkbox">Hierro</label><br>
+            <label><input type="checkbox">Acero</label><br>
+            <label><input type="checkbox">Residuos clínicos</label><br>
+        </div>
+        
+        <div class="img-checkbox">
+            <!-- <img src="reciclaje.JPG" alt=""> -->
+            <img src="https://loremflickr.com/320/240/recycle" alt="">
+        </div>
+    </section>
+    
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+    
+    <section class="section2" id="location">
+        <div>
+            <h2 class="location">Selecciona su ubicación</h2>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.79464882191!2d-75.59241300483359!3d6.2375258455371965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb48cbae65520cd5!2zw4l4aXRv!5e0!3m2!1ses!2sco!4v1586111067584!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div>
+            <label for="">Municipio</label>
+            <select class="container-select" name="" id="">
+                <option value="">>--Seleccione--<</option>
+                <option value="">Envigado</option>
+                <option value="">Sabaneta</option>
+                <option value="">Caldas</option>
+                <option value="">Itagui</option>
+                <option value="">Copacabana</option>
+                <option value="">Girardota</option>
+                <option value="">Barbosa</option>
+            </select>
+    
+            <label for="">Barrio</label>
+            <form class="address" action="">
+                <input type="text" placeholder="Belén, Buenos Aires, Boston">         
+            </form>
+
+            <label for="">Dirección</label>
+            <form class="address" action="">
+                <input type="text" placeholder="Cr 50 # 50 - 50">          
+            </form>
+
+            <label for="">Más indicaciones</label>
+            <form class="address" action="">
+                <input type="text" placeholder="Urbaización, Bloque, Apartamento">          
+            </form>
+        </div>
+
+        
+    </section>
+
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="section3" id="dateTime">
+        <h2 class="title-date-time">Selecciona la fecha y la hora</h2>
+
+        <div class="date-time">
+            <div>
+                <input type="date">
+            </div>
+            
+            <div>
+                <input type="time" name="hora">
+            </div>
+        </div>
+    </section>
+
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="section4" id="contact">
+        <h2 class="title-contact">Indíquenos sus datos de contacto</h2>
+            <form class="data-contact" action="">
+                <label class="data-contact-label" for="">Nombre
+                    <input type="text" placeholder="Ingresa tu nombre">
+                </label>
+
+                <label class="data-contact-label" for="">Teléfono
+                    <input type="number" placeholder="Ingresa tu teléfono">
+                </label>
+
+                <label class="data-contact-label" for="">Nombre
+                    <input type="email" placeholder="Ingresa tu correo">
+                </label>
+            </form>
+    </section>
+
+    <hr> <!-- ------------------------------------------------------------------------------------------------------- -->
+
+    <section class="section5" id="confirmation">
+        <h2 class="title-contact">Confirmación</h2>
+        <a class="continue" href="#modal"><button>Continuar</button></a>
+        <!-- Inicio Modal -->
+        <div class="mainModal" id="modal">
+            <div class="content-modal">
+                <div class="header-nodal">
+                    <h3>Confirmación</h3>
+                </div>
+                <hr>
+                <p class="confirmation-cancel-option">Si estás seguro de tu solicitud, presiona "Confirmar"</p>
+                <p class="confirmation-cancel-option">De lo contario, presiona "Cancelar"</p>
+                <div class="btn-container">
+                 <a href=""><button>Cancelar</button></a>   
+                    <button>Confirmar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Modal -->
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <a class="up" href="#navMenu">Arriba</a>
+
+    <script>
+        document.getElementById().innerHTML
+        
+        document.querySelector('#confirmation');
+
+        
+    </script>
+</body>
+</html>
